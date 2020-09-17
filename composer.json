@@ -1,0 +1,15 @@
+{
+    "name": "henrik/tshirtshop",
+    "description": "Webshop project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henrik Johansson",
+            "email": "henrikjohansson1980@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^3.1"
+    }
+}
+
