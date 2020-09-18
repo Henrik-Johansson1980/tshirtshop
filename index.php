@@ -1,5 +1,5 @@
 <?php
 
 print <<< _HTML_
-    <h1>Tshirt</h1>
+    <h1>Tshirts</h1>
 _HTML_;
