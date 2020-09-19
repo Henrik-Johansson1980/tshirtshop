@@ -1,5 +1,14 @@
 <?php
+// Include utilities
 
-print <<< _HTML_
-    <h1>Tshirts</h1>
-_HTML_;
+require_once('include/config.php');
+
+// Load application page template
+require_once( PUBLIC_DIR . 'application.php');
+
+// Load Smarty template file
+$application = new Application();
+
+// Display Page
+$application->display('store_front.tpl');
+

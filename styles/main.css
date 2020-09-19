@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+  background-color: green;
+  align-content: center;
+}
+
+img{
+  display: block;
+}
+
+.container{
+  flex: 1;
+  display: flex;
+}
+
+#site-footer{
+  background-color: #333;
+}
+
+.error_box {
+  background-color: #ffffcc;
+  border: 1px solid #dc143c;
+  color: #dc143c;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  width: 90%;
+  z-index: 5;
+}
