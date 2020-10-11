@@ -1,0 +1,22 @@
+
+ERRNO: 2
+
+TEXT: require_once(file.php): failed to open stream: No such file or directory
+
+LOCATION: E:\WebbProjekt\tshirtshop\index.php line: 25, at: October 11, 2020, 10:30 am
+
+Showing backtrace:
+require_once() # line   25, file: E:\WebbProjekt\tshirtshop\index.php
+
+
+
+ERRNO: 2
+
+TEXT: require_once(file.php): failed to open stream: No such file or directory
+
+LOCATION: E:\WebbProjekt\tshirtshop\index.php line: 24, at: October 11, 2020, 10:31 am
+
+Showing backtrace:
+require_once() # line   24, file: E:\WebbProjekt\tshirtshop\index.php
+
+

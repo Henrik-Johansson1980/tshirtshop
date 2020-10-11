@@ -15,7 +15,7 @@ define('CONFIG_DIR', SITE_ROOT . '/include/configs');
 
 // Set these to true on development.
 define('IS_WARNING_FATAL', true);
-define('DEBUG', true);
+define('DEBUGGING', true);
 
 // Error types to be reported
 define('ERROR_TYPES', E_ALL);
@@ -29,4 +29,7 @@ ini_set('sendmail_from', SENDMAIL_FROM);
 // Dont log errors to file by default
 define('LOG_ERRORS', false);
 define('SITE_GENERIC_ERROR_MSG', "<h1>TShirtShop Error!</h1>");
-define('LOG_ERRORS_FILE', realpath('.') . "error_log.txt");
+define('LOG_ERRORS_FILE', SITE_ROOT . "/error_log.txt");
+
+// Turn off errors
+// error_reporting(0);
