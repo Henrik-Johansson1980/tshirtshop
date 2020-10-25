@@ -21,6 +21,7 @@
   <div class="container">
     <nav id="main-nav">
       Site navigation
+      {include file="departments_list.tpl"}
     </nav> 
     <main id="main-content">
       Place contents here.

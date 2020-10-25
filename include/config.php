@@ -31,5 +31,13 @@ define('LOG_ERRORS', false);
 define('SITE_GENERIC_ERROR_MSG', "<h1>TShirtShop Error!</h1>");
 define('LOG_ERRORS_FILE', SITE_ROOT . "/error_log.txt");
 
+// Database Connection setup
+define('DB_PERSISTENCY', true);
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'tshirtshop');
+define('PDO_DSN', 'mysql:host=' . DB_SERVER . ';dbname=' . DB_DATABASE);
+
 // Turn off errors
-// error_reporting(0);
+//error_reporting(0);
