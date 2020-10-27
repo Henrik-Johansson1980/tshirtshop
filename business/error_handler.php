@@ -1,6 +1,6 @@
 <?php
 
-namespace Tshirtshop;
+namespace Tshirtshop\business;
 
 class ErrorHandler
 {
@@ -11,7 +11,7 @@ class ErrorHandler
 
     public static function setHandler($err_types = ERROR_TYPES)
     {
-        return set_error_handler(array('Tshirtshop\ErrorHandler', 'handler'), $err_types);
+        return set_error_handler(array('Tshirtshop\business\ErrorHandler', 'handler'), $err_types);
     }
 
     // Error Handler Method

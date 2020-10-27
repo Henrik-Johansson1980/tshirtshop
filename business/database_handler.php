@@ -1,6 +1,6 @@
 <?php
 
-namespace Tshirtshop;
+namespace Tshirtshop\business;
 
 use PDO;
 

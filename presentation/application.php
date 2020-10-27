@@ -1,6 +1,6 @@
 <?php
 
-namespace Tshirtshop;
+namespace Tshirtshop\presentation;
 
 use Smarty;
 
@@ -16,6 +16,6 @@ class Application extends Smarty
         $this->compile_dir = COMPILE_DIR;
         $this->config_dir = CONFIG_DIR;
         $this->plugins_dir[0] = SMARTY_DIR . 'plugins';
-        $this->plugins_dir[1] = PUBLIC_DIR . 'smarty_plugins';
+        $this->plugins_dir[1] = PRESENTATION_DIR . 'smarty_plugins';
     }
 }

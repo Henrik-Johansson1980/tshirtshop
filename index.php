@@ -2,9 +2,9 @@
 
 namespace Tshirtshop;
 
-use Tshirtshop\Application;
-use Tshirtshop\Errorhandler;
-use Tshirtshop\DatabaseHandler;
+use Tshirtshop\presentation\Application;
+use Tshirtshop\business\Errorhandler;
+use Tshirtshop\business\DatabaseHandler;
 
 // Include utilities
 require_once 'include/config.php';
@@ -16,7 +16,7 @@ require_once BUSINESS_DIR . 'catalog.php';
 ErrorHandler::setHandler();
 
 // Load application page template
-require_once PUBLIC_DIR . 'application.php';
+require_once PRESENTATION_DIR . 'application.php';
 
 // Load Smarty template file
 $application = new Application();

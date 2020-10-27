@@ -1,7 +1,7 @@
 <?php
 function smarty_function_load_presentation_object($params, $smarty)
 {
-require_once PUBLIC_DIR . $params['filename'] . '.php';
+require_once PRESENTATION_DIR . $params['filename'] . '.php';
 $className = str_replace(' ', '',
 ucfirst(str_replace('_', ' ',
 $params['filename'])));
