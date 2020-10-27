@@ -2,8 +2,7 @@
 {* departments_list.tpl *}
 {load_presentation_object filename="departments_list" assign="obj"}
 {* Start departments list *}
-<div class="box">
-<p class="box-title">Choose a Department</p>
+<div>
 <ul>
 {* Loop through the list of departments *}
 {section name=i loop=$obj->mDepartments}

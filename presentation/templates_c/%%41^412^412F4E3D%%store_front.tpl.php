@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-10-27 20:40:05
+<?php /* Smarty version 2.6.31, created on 2020-10-27 21:02:57
          compiled from store_front.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'config_load', 'store_front.tpl', 2, false),)), $this); ?>
@@ -25,7 +25,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'config_load
   </header>
   <div class="container">
     <nav id="main-nav">
-      Site navigation
       <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "departments_list.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;

@@ -1,49 +1,110 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
-  height: 100%;
+	font-size: 62.5%;
+	height: 100%;
 }
 body {
-  width: 100%;
-  min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #header {
-  display: flex;
-  background-color: green;
-  align-content: center;
+    flex: 0;
+    display: flex;
+    align-content: center;
+    background-color: whitesmoke;
 }
 
-img{
-  display: block;
+img {
+	display: block;
 }
 
-.container{
-  flex: 1;
-  display: flex;
+.container {
+	flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#site-footer{
-  background-color: #333;
+#main-nav{
+    flex: 1;
+    width: 100vw;
+    background-color: whitesmoke;
+    text-align: center;
+}
+#main-nav p {
+    font-size: 2rem;
+    text-align: center;
+}
+#main-nav a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: #222;
+}
+
+#main-nav a:hover,
+#main-nav a:focus{
+    background-color: #aaa;
+}
+
+#main-content{
+    flex:3;
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+#site-footer {
+    flex: 0;
+    min-height: 100px;
+    background-color: #999;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .error_box {
-  background-color: #ffffcc;
-  border: 1px solid #dc143c;
-  color: #dc143c;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 5px;
-  position: relative;
-  text-align: left;
-  width: 90%;
-  z-index: 5;
+	background-color: #ffffcc;
+	border: 1px solid #dc143c;
+	color: #dc143c;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px;
+	position: relative;
+	text-align: left;
+	width: 90%;
+	z-index: 5;
+}
+
+@media all and (min-width: 560px){
+    #main-nav{
+        flex: 1;
+        width: 20vw;
+        min-height: 100%;
+        background-color: whitesmoke;
+        text-align: left;
+    }
+    
+    #main-nav a {
+        padding-left: 1rem;
+    }
+
+    #main-content{
+        flex:3;
+        min-width: 80vw;
+        min-height: 100%;
+    }
 }

@@ -1,11 +1,10 @@
-<?php /* Smarty version 2.6.31, created on 2020-10-27 20:40:05
+<?php /* Smarty version 2.6.31, created on 2020-10-27 21:07:47
          compiled from departments_list.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'load_presentation_object', 'departments_list.tpl', 3, false),)), $this); ?>
 <?php echo smarty_function_load_presentation_object(array('filename' => 'departments_list','assign' => 'obj'), $this);?>
 
-<div class="box">
-<p class="box-title">Choose a Department</p>
+<div>
 <ul>
 <?php unset($this->_sections['i']);
 $this->_sections['i']['name'] = 'i';
