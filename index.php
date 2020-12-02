@@ -17,6 +17,7 @@ ErrorHandler::setHandler();
 
 // Load application page template
 require_once PRESENTATION_DIR . 'application.php';
+require_once PRESENTATION_DIR . 'link.php';
 
 // Load Smarty template file
 $application = new Application();

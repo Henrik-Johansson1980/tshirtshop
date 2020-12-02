@@ -1,12 +1,12 @@
-<?php /* Smarty version 2.6.31, created on 2020-10-27 21:07:47
+<?php /* Smarty version 2.6.31, created on 2020-12-02 10:54:57
          compiled from departments_list.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'load_presentation_object', 'departments_list.tpl', 3, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'load_presentation_object', 'departments_list.tpl', 2, false),)), $this); ?>
 <?php echo smarty_function_load_presentation_object(array('filename' => 'departments_list','assign' => 'obj'), $this);?>
 
 <div>
-<ul>
-<?php unset($this->_sections['i']);
+    <ul>
+                <?php unset($this->_sections['i']);
 $this->_sections['i']['name'] = 'i';
 $this->_sections['i']['loop'] = is_array($_loop=$this->_tpl_vars['obj']->mDepartments) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $this->_sections['i']['show'] = true;
@@ -30,18 +30,18 @@ $this->_sections['i']['index_next'] = $this->_sections['i']['index'] + $this->_s
 $this->_sections['i']['first']      = ($this->_sections['i']['iteration'] == 1);
 $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $this->_sections['i']['total']);
 ?>
-<?php $this->assign('selected', ""); ?>
-<?php if (( $this->_tpl_vars['obj']->mSelectedDepartment == $this->_tpl_vars['obj']->mDepartments[$this->_sections['i']['index']]['department_id'] )): ?>
-<?php $this->assign('selected', "class=\"selected\""); ?>
-<?php endif; ?>
-<li>
-<a <?php echo $this->_tpl_vars['selected']; ?>
+        <?php $this->assign('selected', ""); ?>
+                <?php if (( $this->_tpl_vars['obj']->mSelectedDepartment == $this->_tpl_vars['obj']->mDepartments[$this->_sections['i']['index']]['department_id'] )): ?>
+        <?php $this->assign('selected', "class=\"selected\""); ?>
+        <?php endif; ?>
+        <li>
+                        <a <?php echo $this->_tpl_vars['selected']; ?>
  href="<?php echo $this->_tpl_vars['obj']->mDepartments[$this->_sections['i']['index']]['link_to_department']; ?>
 ">
-<?php echo $this->_tpl_vars['obj']->mDepartments[$this->_sections['i']['index']]['name']; ?>
+            <?php echo $this->_tpl_vars['obj']->mDepartments[$this->_sections['i']['index']]['name']; ?>
 
-</a>
-</li>
-<?php endfor; endif; ?>
-</ul>
+            </a>
+        </li>
+        <?php endfor; endif; ?>
+    </ul>
 </div>
